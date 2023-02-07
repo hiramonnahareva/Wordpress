@@ -21,11 +21,6 @@
                 <a class="text-success" href=""><span >D</span> Events </a>
             </div>
             <div class="col-md-9">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Bolgs</li>
-                </ul>
             </div>
         </div>
     </div>
