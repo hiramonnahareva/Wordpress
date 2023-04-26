@@ -1,0 +1,17 @@
+/* 
+Theme name: Dream events
+Version: 0.1
+Theme URI: www.dreamevents.com
+Author: Hiramon Nahar Eva
+Author URI: https://courageous-frangollo-f43f23.netlify.app/
+Description: An event description is copy that aims to tell your potential attendees what will be happening at the event, who will be speaking, and what they will get out of attending. Good event descriptions can drive attendance to events and also lead to more media coverage.
+
+Tags: Dream Events
+*/
+
+img{
+    width: 20px;
+    height: 20px;
+    margin: 100px;
+    border: 10px solid grey;
+}
