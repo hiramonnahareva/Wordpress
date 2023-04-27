@@ -47,6 +47,7 @@ register_post_type('Gallery', [
   ],
   'supports' => [ 'thumbnail', ],
   'menu_position' => 5,
+  'menu_icon' => 'dashicons-format-gallery'
 
 
 ]);
@@ -63,7 +64,24 @@ register_post_type('news', [
 
   'supports' => [ 'thumbnail',  'editor' ],
   'menu_position' => 6,
+  'menu_icon' => 'dashicons-admin-site-alt'
 
+  ]);
+
+  register_taxonomy('gal_tag', 'gallery', [
+    'public' => true,
+  ]);
+  register_taxonomy('gal_tag_cat', 'gallery', [
+    'public' => true,
+    'hierarchical' => true
+  ]);
+
+  register_taxonomy('news_tag', 'news', [
+    'public' => true,
+  ]);
+  register_taxonomy('news_tag_cat', 'news', [
+    'public' => true,
+    'hierarchical' => true
   ]);
 
   

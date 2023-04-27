@@ -16,6 +16,17 @@
 
 <body <?php body_class(); ?>>
 
+<!-- <?php wp_nav_menu([
+    'theme_location' => 'mm',
+    'container_class'   => 'new_id',
+    'container_id'   => ' ',
+    'menu_class'     => ' ',
+    'menu_id'        => ' ',
+]); ?>
+
+
+
+
 <div id="header_area">
     <div class="container">
         <div class="row">
@@ -27,14 +38,31 @@
                 <h1><?php bloginfo('url'); ?> </h1>
             </div>
             <div class="col-md-9">
-            <img src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/photo.png" alt="">
+                <img src="<?php header_image(); ?>" alt="">
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
-<?php wp_footer(); ?>
+<!-- <?php wp_footer(); ?> -->
+
+<!-- 
+<div class='left_sidebar'>
+    <?Php dynamic_sidebar('ls') ?>
+</div>
+<div class="rigth_sidebar">
+<?Php dynamic_sidebar('rs') ?>
+</div> -->
+
+<?php while(have_posts()) : the_post(); ?>
+
+<div class="posts">
+    <h2><?php the_title();?></h2>
+    <?php the_post_thumbnail(); ?>
+    <p><?php the_content(); ?></p>
+</div>
     
     </body>
 </html>
+
+<?php endwhile; ?>

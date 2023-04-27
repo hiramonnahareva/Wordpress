@@ -10,8 +10,68 @@ Tags: Dream Events
 */
 
 img{
-    width: 20px;
-    height: 20px;
-    margin: 100px;
-    border: 10px solid grey;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 100px auto;
+    border: 2px solid grey;
+}
+
+ul {
+    
+    background-color: #333;
+
+}
+
+ul li {
+
+    list-style: none;
+    display: inline-block;
+
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.left_sidebar {
+    float: left;
+    width: 300px;
+    height: 100vh;
+    /* background: #000; */
+}
+.right_sidebar {
+    width: 300px;
+    height: 100vh;
+    float: right;
+}
+
+.posts {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.posts h2 {
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 60px;
+}
+
+.posts img {
+
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: 30px auto;
+
+}
+
+.posts p {
+    font-family: sans-serif;
+    line-height: 30px;
+    font-size: 15px;
 }
