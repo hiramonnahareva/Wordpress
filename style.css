@@ -1,77 +1,232 @@
-/* 
-Theme name: Dream events
-Version: 0.1
-Theme URI: www.dreamevents.com
-Author: Hiramon Nahar Eva
-Author URI: https://courageous-frangollo-f43f23.netlify.app/
-Description: An event description is copy that aims to tell your potential attendees what will be happening at the event, who will be speaking, and what they will get out of attending. Good event descriptions can drive attendance to events and also lead to more media coverage.
+ /* ========== import google font ========== */
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Istok+Web:wght@700&family=Kdam+Thmor+Pro&family=Lobster&family=Manrope:wght@200;400;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500&family=Rubik+Moonrocks&display=swap');
 
-Tags: Dream Events
-*/
+ header>nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 100px;
+     background: #E9E6D7;
+ }
 
-img{
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin: 100px auto;
-    border: 2px solid grey;
-}
+ ul>li {
+     list-style: none;
+ }
 
-ul {
-    
-    background-color: #333;
+ ul>li>button {
+     background: #26534C;
+     border-radius: 4px;
+     padding: 9px 30px;
+     border: none;
+     color: #ffffff;
+     /* ========== font-family ========== */
+     font-family: 'Manrope';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 28px;
+ }
 
-}
+ main>.top_section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background: #E9E6D7;
+ }
 
-ul li {
+ .top_section>h2 {
+     font-family: 'Manrope';
+     font-weight: 700;
+     font-size: 62px;
+     color: #1C3F39;
+     margin: 0;
+     text-align: center;
+ }
 
-    list-style: none;
-    display: inline-block;
+ .top_section>p {
+     font-family: 'Manrope';
+     font-size: 18px;
+     color: #556561;
+     font-weight: 400;
+     text-align: center;
+ }
 
-}
+ .top_section>.buttons {
+     display: flex;
+     gap: 22px;
 
-ul li a {
-    text-decoration: none;
-    padding: 10px 20px;
-    color: #fff;
-    font-family: sans-serif;
-}
+ }
 
-.left_sidebar {
-    float: left;
-    width: 300px;
-    height: 100vh;
-    /* background: #000; */
-}
-.right_sidebar {
-    width: 300px;
-    height: 100vh;
-    float: right;
-}
+ .read_btn,
+ .learn_more_btn {
+     display: flex;
+     align-items: center;
+     gap: 9px;
+     background: #F2AC0D;
+     border-radius: 6px;
+     padding: 12px 18px;
+     border: none;
+     font-family: 'Manrope';
+     font-size: 16px;
+     font-weight: 600;
+     color: #1C3F39;
 
-.posts {
-    width: 80%;
-    margin: auto;
-    display: block;
-}
-.posts h2 {
-   text-align: center;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 60px;
-}
+ }
 
-.posts img {
+ .audio_btn {
+     display: flex;
+     gap: 9px;
+     padding: 12px 18px;
+     border-radius: 6px;
+     border: 2px solid #556561;
+     background: none;
+     align-items: center;
+     font-family: 'Manrope';
+     font-size: 16px;
+     font-weight: 600;
+     color: #1C3F39;
+ }
 
-    width: 400px;
-    height: 300px;
-    border-radius: 10px;
-    display: block;
-    margin: 30px auto;
+ .banner_img_con {
+     display: flex;
+     padding-top: 70px;
+     padding-left: 135px;
+     padding-right: 135px;
+     gap: 0 16px;
+     background: #E9E6D7;
+ }
 
-}
+ .banner_img {
+     height: 444px;
 
-.posts p {
-    font-family: sans-serif;
-    line-height: 30px;
-    font-size: 15px;
-}
+ }
+
+ .counter_con {
+     background: #1C3F39;
+     padding: 59px 135px;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+
+ .counter_text>h3 {
+     color: #F2AC0D;
+     margin: 0;
+     font-family: 'Manrope';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 42px;
+     line-height: 52px;
+     text-align: center;
+ }
+
+ .counter_text>p {
+     color: #B7CBC7;
+     font-family: 'Manrope';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 30px;
+ }
+
+ .border {
+     width: 1px;
+     height: 70px;
+     left: 346px;
+     top: 1093px;
+     background: #315E56;
+ }
+
+ .about_con {
+     padding: 77px 135px;
+     display: flex;
+     gap: 130px;
+     background: #E9E6D7;
+ }
+
+ .about_text_con>h2,
+ .top_part>h2 {
+     font-family: 'Manrope';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 42px;
+     line-height: 52px;
+     color: #1C3F39;
+     margin-bottom: 20px;
+ }
+
+ .about_text_con>p,
+ .top_part>p {
+     font-family: 'Manrope';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 28px;
+     color: #556561;
+ }
+
+ .blog_con {
+     margin: 135px 135px 20px 135px;
+ }
+
+ .top_part {
+     text-align: center;
+     margin-bottom: 70px;
+ }
+
+ .border_b {
+     width: 35px;
+     height: 2px;
+     left: 416px;
+     top: 4015px;
+     background: #26534C;
+     border-radius: 1px;
+ }
+
+ .blogs {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 30px;
+
+ }
+
+ article {
+     display: flex;
+     gap: 18px;
+     border: 1px solid #CCD3D2;
+     border-radius: 8px;
+     padding: 19px;
+ }
+
+ .blog_text_con>h3 {
+     font-family: 'Manrope';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 30px;
+     color: #1C3F39;
+ }
+
+ .blog_text_con>p {
+     font-family: 'Manrope';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 24px;
+     color: #556561;
+ }
+
+ .blog_text_con>button {
+     font-family: 'Manrope';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     border: none;
+     background: none;
+     color: #F2AC0D;
+ }
+ .read_all {
+    display: flex;
+    justify-content: center;
+ }
