@@ -84,6 +84,15 @@ register_post_type('news', [
     'hierarchical' => true
   ]);
 
+//
+add_filter('new' 'new_filter')
+  
+  function new($val) {
+echo 'this is val'
+}
+
+//
+
   
 
 // Theme CSS and jquery File calling
@@ -130,6 +139,7 @@ function eva_customizar_register($wp_customize){
       'setting' => 'eva_logo',
       'section' => 'eva_header_area',
     ) ));
+  
 }
 
 
